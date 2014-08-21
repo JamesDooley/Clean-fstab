@@ -22,16 +22,16 @@ proc                    /proc                   proc    defaults        0 0
 This is a mess, and makes it hard to read.  This script automatically adds spaces (or tabs) to the file to ensure data is properly aligned.
 
 ```
-/dev/VolGroup00/LogVol00  /                                  ext3    defaults,usrquota                            1 1
-LABEL=/boot               /boot                              ext3    defaults                                     1 2
-tmpfs                     /dev/shm                           tmpfs   defaults                                     0 0
-devpts                    /dev/pts                           devpts  gid=5,mode=620                               0 0
-sysfs                     /sys                               sysfs   defaults                                     0 0
-proc                      /proc                              proc    defaults                                     0 0
-/dev/VolGroup00/LogVol01  swap                               swap    defaults                                     0 0
-/usr/tmpDSK               /tmp                               ext3    defaults,noauto                              0 0
-/tmp                      /var/tmp                           ext3    defaults,usrquota,bind,noauto                0 0
-/dev/xvdb1                /home                              ext3    defaults                                     0 0
+/dev/VolGroup00/LogVol00  /         ext3    defaults,usrquota              1 1
+LABEL=/boot               /boot     ext3    defaults                       1 2
+tmpfs                     /dev/shm  tmpfs   defaults                       0 0
+devpts                    /dev/pts  devpts  gid=5,mode=620                 0 0
+sysfs                     /sys      sysfs   defaults                       0 0
+proc                      /proc     proc    defaults                       0 0
+/dev/VolGroup00/LogVol01  swap      swap    defaults                       0 0
+/usr/tmpDSK               /tmp      ext3    defaults,noauto                0 0
+/tmp                      /var/tmp  ext3    defaults,usrquota,bind,noauto  0 0
+/dev/xvdb1                /home     ext3    defaults                       0 0
 ```
 
 Comments inbetween and at the end of entries will be automatically perserved and not formatted.
